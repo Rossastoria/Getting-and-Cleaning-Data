@@ -62,4 +62,3 @@ write.table(tidyavg, ".tidyavg.txt")
   ## ----- 'tidyavg' is a dataframe of 180 obs and 81 variable, from which can be read
   ## ----- the subject's identification number, the motion subject was taking at the time of obs, and 
   ## ----- the mean of the feature for that subject doing that motion.
-}
