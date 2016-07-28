@@ -1,0 +1,25 @@
+DATA SOURCE
+
+The data was downloaded from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+
+The observations are sensor readings from a smart phone along an array of features. The observation are divided into training 
+and testing groups. Separate files contain the subject identification number, the motion subject was undergoing at the
+time of the observation, and a file indexing the motion type with a numeric value. The script contained in this commit 
+compilies those files into two tidy data sets.
+
+VARIABLES
+
+The variables are the sensoring readings which are indexed against 30 subjects undertaking one of six different possible
+motions at the time of the observation of the sensor. Variables are classified as "features" and features have the characteristic
+of measuring, for instance, the subjects acceleration in one of three dimensions at the time of observation. For the first data 
+set, from the total list of features I remove all which are not the mean or standard deviation. For the second data set,
+the data set is reshaped to report only the mean of each remaining feature.
+
+OUTPUT
+
+The first file (tidydata.txt) is a space delimited file which contains the mean and standard deviation features
+for each subject undertaking each motion for both the training and test observations.
+
+The second file (tidyavg.txt) is a space delimited file which reshapes the first file to report only the averages for 
+each feature for each subject undertaking each motion.
+
