@@ -11,8 +11,8 @@ VARIABLES
 
 The variables are the sensoring readings which are indexed against 30 subjects undertaking one of six different possible
 motions at the time of the observation of the sensor. Variables are classified as "features" and features have the characteristic
-of measuring, for instance, the subjects acceleration in one of three dimensions at the time of observation. For the first data 
-set, from the total list of features I remove all which are not the mean or standard deviation. For the second data set,
+of measuring, for instance, the subject's acceleration in one of three dimensions at the time of observation. For the first data 
+set, I remove from the total list of features all which are not the mean or standard deviation. For the second data set,
 the data set is reshaped to report only the mean of each remaining feature.
 
 OUTPUT
@@ -23,3 +23,5 @@ for each subject undertaking each motion for both the training and test observat
 The second file (tidyavg.txt) is a space delimited file which reshapes the first file to report only the averages for 
 each feature for each subject undertaking each motion.
 
+Both of these data sets are "wide" and are designed so that the user can easily subset a subject and motion to report 
+one or more variables.
