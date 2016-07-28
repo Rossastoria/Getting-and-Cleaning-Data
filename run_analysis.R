@@ -59,7 +59,7 @@ subjects <- rbind(subject_train, subject_test)
 
         ## ----- Cbind x_data_clean, y_data, subjects: Tidy dataset of 10,299 obs and 81 variables
 tidy <- cbind(subjects, y_data, x_data_clean)
-write.table(tidy, ".tidy.txt")
+write.table(tidy, "tidydata.txt")
 
         ## ----- Second Tidy Data Set
   ## ----- use ddply to return second data type
